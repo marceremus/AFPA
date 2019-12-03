@@ -1,5 +1,3 @@
-BROUET Thierry https://github.com/thierryDev62/Travail  
-
 # AFPA-Participants Groupe 4
 La liste des participants à la formation
 
@@ -15,5 +13,5 @@ Veuillez coller ici vos liens vers votre gitHub
  - Bolle        Ophélie             https://github.com/TheKyu/projetvelo
  - Vermelle     Sébastien           https://github.com/Fyfres     
  - Radosz       Kevin               https://github.com/Barrkevin/GithubKevin
-
+ - BROUET       Thierry             https://github.com/thierryDev62/Travail  
 
