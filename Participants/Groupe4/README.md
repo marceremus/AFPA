@@ -6,4 +6,6 @@ La liste des participants à la formation
 Veuillez coller ici vos liens vers votre gitHub
 
  - Nom 	        Prénom 	            Link gitHub 
- Bolle          Ophélie             https://github.com/TheKyu/projetvelo
+ - Bolle        Ophélie             https://github.com/TheKyu/projetvelo
+ - Vermelle     Sébastien           https://github.com/Fyfres     
+ - Leclercq     Cédric              https://github.com/torkhan/Remise-projet-Marc-Entrerpise-Les-velos-quisontbeaux
