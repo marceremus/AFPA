@@ -6,4 +6,8 @@ La liste des participants à la formation
 Veuillez coller ici vos liens vers votre gitHub
 
  - Nom 	        Prénom 	            Link gitHub 
- Hoffmann       Noémie              https://github.com/Noemie123/projet-location-velo
+ - Hoffmann     Noémie              https://github.com/Noemie123/projet-location-velo
+ - Bolle        Ophélie             https://github.com/TheKyu/projetvelo
+ - Vermelle     Sébastien           https://github.com/Fyfres     
+ - Leclercq     Cédric              https://github.com/torkhan/Remise-projet-Marc-Entrerpise-Les-velos-quisontbeaux
+ - Radosz       Kevin               https://github.com/Barrkevin/GithubKevin
