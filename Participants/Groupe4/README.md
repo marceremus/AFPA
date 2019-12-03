@@ -15,3 +15,4 @@ Veuillez coller ici vos liens vers votre gitHub
  - Radosz       Kevin               https://github.com/Barrkevin/GithubKevin
  - BROUET       Thierry             https://github.com/thierryDev62/Travail  
  - Detrez	Fabien		    https://github.com/FabienDetrez/AfpaFabien
+- Roussel       Cindy               https://github.com/cindyroussel
