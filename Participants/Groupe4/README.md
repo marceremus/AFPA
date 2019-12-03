@@ -14,4 +14,4 @@ Veuillez coller ici vos liens vers votre gitHub
  - Vermelle     Sébastien           https://github.com/Fyfres     
  - Radosz       Kevin               https://github.com/Barrkevin/GithubKevin
  - BROUET       Thierry             https://github.com/thierryDev62/Travail  
-
+ - Detrez	Fabien		    https://github.com/FabienDetrez/AfpaFabien
