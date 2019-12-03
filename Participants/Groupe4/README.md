@@ -6,4 +6,7 @@ La liste des participants à la formation
 Veuillez coller ici vos liens vers votre gitHub
 
  - Nom 	        Prénom 	            Link gitHub 
+
  - Tournon      Kilian              https://github.com/kikstrn
+ - Leclercq        Cédric              https://github.com/torkhan/Remise-projet-Marc-Entrerpise-Les-velos-quisontbeaux
+
