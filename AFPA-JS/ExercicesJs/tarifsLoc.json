@@ -1,0 +1,8 @@
+{
+	"tarifs": {
+		"heure": 2,
+		"jour": 12,
+		"semaine": 49,
+		"mois": 189,
+	}
+}
