@@ -1,0 +1,123 @@
+{
+	"type": "FeatureCollection", 
+	"version": "draft", 
+	"features": [
+		{
+			"type": "Feature", 
+			"geometry": {
+				"type": "Point", 
+				"coordinates": [6.176884, 48.683476]
+			}, 
+			"properties": {
+				"label": "8 Bd Jean Jaures 54000 Nancy", 
+				"score": 0.8688744814555229, 
+				"housenumber": "8", 
+				"id": "54395_2790_00008", 
+				"type": "housenumber", 
+				"x": 933811.19, 
+				"y": 6847295.26, 
+				"importance": 0.5576192960107529, 
+				"name": "8 Bd Jean Jaures", 
+				"postcode": "54000", 
+				"citycode": "54395", 
+				"city": "Nancy", 
+				"context": "54, Meurthe-et-Moselle, Grand Est", 
+				"street": "Bd Jean Jaures"
+			}
+		}, 
+		{
+			"type": "Feature", 
+			"geometry": {
+				"type": "Point", 
+				"coordinates": [6.209611, 48.688457]
+			}, 
+			"properties": {
+				"label": "Bd Jean Jaures 54510 Tomblaine", 
+				"score": 0.748583880912958, 
+				"id": "54526_0180", 
+				"type": "street", 
+				"x": 936196.04, 
+				"y": 6847946.03, 
+				"importance": 0.4344226900425383, 
+				"name": "Bd Jean Jaures", 
+				"postcode": "54510", 
+				"citycode": "54526", 
+				"city": "Tomblaine", 
+				"context": "54, Meurthe-et-Moselle, Grand Est"
+			}
+		}, 
+		{
+			"type": "Feature", 
+			"geometry": {
+				"type": "Point", 
+				"coordinates": [7.278048, 43.699526]
+			}, 
+			"properties": {
+				"label": "8 Boulevard Jean Jaur\u00e8s 06300 Nice", 
+				"score": 0.5541099449794793, 
+				"housenumber": "8", 
+				"id": "06088_3360_00008", 
+				"type": "housenumber", 
+				"x": 1044766.16, 
+				"y": 6298285.5, 
+				"importance": 0.6169485252090544, 
+				"name": "8 Boulevard Jean Jaur\u00e8s", 
+				"postcode": "06300", 
+				"citycode": "06088", 
+				"city": "Nice", 
+				"context": "06, Alpes-Maritimes, Provence-Alpes-C\u00f4te d'Azur", 
+				"street": "Boulevard Jean Jaur\u00e8s"
+			}
+		}, 
+		{
+			"type": "Feature", 
+			"geometry": {
+				"type": "Point", 
+				"coordinates": [3.08623, 45.768013]
+			}, 
+			"properties": {
+				"label": "8 Boulevard Jean Jaur\u00e8s 63000 Clermont-Ferrand", 
+				"score": 0.5501280681768029, 
+				"housenumber": "8", 
+				"id": "63113_2450_00008", 
+				"type": "housenumber", 
+				"x": 706701.73, 
+				"y": 6518715.26, 
+				"importance": 0.5731478803796153, 
+				"name": "8 Boulevard Jean Jaur\u00e8s", 
+				"postcode": "63000", 
+				"citycode": "63113", 
+				"city": "Clermont-Ferrand", 
+				"context": "63, Puy-de-D\u00f4me, Auvergne-Rh\u00f4ne-Alpes", 
+				"street": "Boulevard Jean Jaur\u00e8s"
+			}
+		}, 
+		{
+			"type": "Feature", 
+			"geometry": {
+				"type": "Point", 
+				"coordinates": [2.237128, 48.844909]
+			}, 
+			"properties": {
+				"label": "8 Boulevard Jean Jaures 92100 Boulogne-Billancourt", 
+				"score": 0.5493275530044229, 
+				"housenumber": "8", 
+				"id": "92012_4740_00008", 
+				"type": "housenumber", 
+				"x": 644013.56, 
+				"y": 6860810.77, 
+				"importance": 0.5643422134834337, 
+				"name": "8 Boulevard Jean Jaures", 
+				"postcode": "92100", 
+				"citycode": "92012", 
+				"city": "Boulogne-Billancourt", 
+				"context": "92, Hauts-de-Seine, \u00cele-de-France", 
+				"street": "Boulevard Jean Jaures"
+			}
+		}
+	], 
+	"attribution": "BAN", 
+	"licence": "ODbL 1.0", 
+	"query": "8 bd jean jaures", 
+	"limit": 5
+}
