@@ -1,2 +1,2 @@
-# Cours présenté par laurent
+# Cours présentés par Laurent
 
