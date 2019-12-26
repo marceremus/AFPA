@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Mon formulaire</h1>
+
+    <hr>
+    <div id="serialize">
+        <pre>
+
+        </pre>
+    </div>
+
+    <form method="get" action="#" id="formulaire">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="nom">Nom *</label>
+                <input type="text" name="nom" class="form-control notempty" id="nom" placeholder="Dupont">
+                <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+            </div>
+
+            <div class="form-group col-6">
+                <label for="prenom">Prénom *</label>
+                <input type="text" name="prenom" class="form-control notempty " id="prenom" placeholder="Jean">
+                <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="genre">Genre</label>
+                <select class="form-control" name="genre" id="genre">
+                    <option value="homme">H</option>
+                    <option value="femme">F</option>
+
+                </select>
+            </div>
+
+            <div class="form-group col-6">
+                <label for="birthday">Date de naissance</label>
+                <input type="date" name="birthday" class="form-control" id="birthday">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Adresse</label>
+            <input type="text" name="address" class="form-control" id="address" placeholder="Password">
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="cp">Code Postal</label>
+                <input type="text" name="codepostal" class="form-control" id="cp" placeholder="00000">
+            </div>
+
+            <div class="form-group col-6">
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" class="form-control" id="ville" placeholder="Paris">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" class="form-control notempty" id="email" placeholder="pierre@dupont.fr">
+            <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+        </div>
+
+        <div class="form-group">
+            <label for="pseudo">Pseudo *</label>
+            <input type="text" name="pseudo" class="form-control notempty" id="pseudo" placeholder="Niki">
+            <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="password">Password *</label>
+                <input type="password" name="password" class="form-control notempty" id="password" placeholder="Password">
+                <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+            </div>
+
+            <div class="form-group col-6">
+                <label for="confirmPassword">Confirmez password *</label>
+                <input type="password" name="confirmesPassword" class="form-control notempty"  id="confirmPassword" placeholder="Password">
+                <span class="alert alert-danger d-none">Ce champ doit être rempli</span>
+            </div>
+            <div>
+                <p><span class="alert alert-danger hidden noshow">Ce champ doit idetique au mot de passe</span></p>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success">Valider</button>
+        <button type="button" class="btn btn-danger">Annuler</button>
+    </form>
+
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <h4>Les consignes : </h4>
+        </div>
+        <p>Rendre les champs : nom, prénom, email, psedo, mot de passe et la confirmation de mot de pass obligatoire.</p>
+        <p>Vérifier si les champs obligatoires sont bien remplis et les champs password et confirme password sont identiques.</p>
+    </div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--<script-->
+<!--        src="https://code.jquery.com/jquery-3.4.1.min.js"-->
+<!--        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

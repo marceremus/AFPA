@@ -1,0 +1,16 @@
+.hidden, .mdpDiff{
+    visibility: hidden;
+}
+
+.visible{
+    margin: 10px 0;
+    visibility: visible;
+}
+
+input{
+    margin: 10px 0;
+}
+
+.bord{
+    border: 2px red solid;
+}
