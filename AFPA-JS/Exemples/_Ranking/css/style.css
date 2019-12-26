@@ -1,0 +1,11 @@
+.fa-star{
+    font-size: 2.5em;
+}
+
+.rating__star--hovered{
+    color:yellow;
+}
+
+.rating__star--selected{
+    color:yellow;
+}
