@@ -2,6 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b33cf8a4-5fc3-4028-bafa-dcc2bc98aa71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../_showImage/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/header_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/picture-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-1-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-2-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-3-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-4-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-5-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-6-thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/search_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/slider2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/slider3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/slider4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/img/slider5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_showImage/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WebPack/webpack/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPack/webpack/dist/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WebPack/webpack/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPack/webpack/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WebPack/webpack/dist/vendors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPack/webpack/dist/vendors.js" afterDir="false" />
@@ -77,7 +107,7 @@
       <workItem from="1576675396394" duration="622000" />
       <workItem from="1576749098866" duration="684000" />
       <workItem from="1577200554531" duration="6089000" />
-      <workItem from="1577382217041" duration="61000" />
+      <workItem from="1577382217041" duration="271000" />
     </task>
     <servers />
   </component>
