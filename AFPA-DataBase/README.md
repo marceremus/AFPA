@@ -2,8 +2,13 @@
 Les cours sur les bases de données
 
 ## Les outils :
+
+### Modélisation 
+- https://www.draw.io/
+
 ### Windows/Mac
 - MySQL Workbench : https://dev.mysql.com/downloads/workbench/
+
 ### Mac
 - Sequel Pro : https://www.sequelpro.com/
 
