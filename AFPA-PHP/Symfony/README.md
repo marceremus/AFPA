@@ -6,6 +6,10 @@
 - installations : 
 	- version light : composer create-project symfony/skeleton my_project_name
 	- version full : composer create-project symfony/website-skeleton my_project_name
+	
+### Changement des droits des fichiers 
+- pour un fichier donné : sudo chmod a+rwx .env
+- pour le dossier : sudo chmod -R 777 tondossier  ou sudo chmod a+rwx tondossier
 
 ### Lancement du projet
 	cd my-project/
