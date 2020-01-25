@@ -9,7 +9,7 @@
 	
 ### Changement des droits des fichiers 
 - pour un fichier donné : sudo chmod a+rwx .env
-- pour le dossier : sudo chmod -R 777 tondossier  ou sudo chmod a+rwx tondossier
+- pour le dossier : sudo chmod -R 777 tondossier  ou sudo chmod a+rwx tondossier .  expl : sudo chmod -R 777 ./FosBundleTest/
 
 ### Lancement du projet
 	cd my-project/
