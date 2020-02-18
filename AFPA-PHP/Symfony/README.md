@@ -31,3 +31,7 @@ php bin/console doctrine:database:create
 
 ### Gestion de la DB
 - liens : https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/association-mapping.html#association-mapping
+
+
+### Auth
+- https://www.youtube.com/watch?v=_GjHWa9hQic
