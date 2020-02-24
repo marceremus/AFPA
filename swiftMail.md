@@ -28,3 +28,7 @@ $message->setContentType("text/html");
 return $mailer->send($message);
 
 </pre>
+
+
+php.ini
+sendmail_path =/usr/sbin/sendmail -t -i -f  votreEmail
