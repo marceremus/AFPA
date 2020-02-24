@@ -11,7 +11,7 @@ MAILER_URL=gmail://marcuxlab@gmail.com:********@localhost
 </pre>
 
       
-# A ajouter dans la partie : " if($questionnaire->isSubmitted() && $questionnaire->isValid()){"
+# A ajouter dans la partie ContactController : " if($contact->isSubmitted() && $contact->isValid()){"
 <pre>
 $sujetMessage = "Questionnaire ";
 $nom = $newQuestionnaire->getNom();
