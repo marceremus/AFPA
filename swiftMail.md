@@ -1,5 +1,6 @@
 .env
 
+<pre>
 ###> symfony/swiftmailer-bundle ###
 # For Gmail as a transport, use: "gmail://username:password@localhost"
 # For a generic SMTP server, use: "smtp://localhost:25?encryption=&auth_mode="
@@ -7,7 +8,7 @@
 # MAILER_URL=null://localhost
 MAILER_URL=gmail://marcuxlab@gmail.com:********@localhost
 ###< symfony/swiftmailer-bundle ###
-
+</pre>
 
       
 # A ajouter dans la partie : " if($questionnaire->isSubmitted() && $questionnaire->isValid()){"
