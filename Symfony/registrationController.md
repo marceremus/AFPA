@@ -1,4 +1,4 @@
-<?php
+<pre><?php
 
 namespace App\Controller;
 
@@ -52,3 +52,4 @@ class RegistrationController extends AbstractController
         ]);
     }
 }
+</pre>
