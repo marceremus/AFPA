@@ -13,12 +13,6 @@ MAILER_URL=gmail://marcuxlab@gmail.com:********@localhost
       
 # A ajouter dans la partie ContactController : " if($contact->isSubmitted() && $contact->isValid()){"
 <pre>
-$sujetMessage = "Questionnaire ";
-$nom = $newQuestionnaire->getNom();
-$prenom = $newQuestionnaire->getPrenom();
-$adresse = $newQuestionnaire->getNumRue().' '.$newQuestionnaire->getNomRue().' '.$newQuestionnaire->getCp().' '.$newQuestionnaire->getCp().' '.$newQuestionnaire->getVille();
-$email = $newQuestionnaire->getEmail();
-$phone = $newQuestionnaire->getPhone();
 
 $messageBody = "message";
 
