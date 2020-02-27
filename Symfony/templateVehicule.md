@@ -26,32 +26,32 @@
 
 ### Template (vehicule.index.html.twig)
 <pre>
-     <div class="card mb-4">
-        {%  for pag in pagination %}
-            <div class="card-body">
-                <h5 class="card-title">
-                    {{ pag.nomVehicule }}
-                </h5>
-                <hr>
-                <p class="card-text">
-                    {{ pag.description }}
-                </p>
-                <p class="card-text">
-                    {{ pag.prixHt }}
-                </p>
-                <p class="card-text">
-                    {{ pag.cv }}
-                </p>
-                <p class="card-text">
-                    {{ pag.datePMC|date("d-m-Y") }}
-                </p>
-            </div>
+        <div class="card mb-4">
+           {%  for pag in pagination %}
+               <div class="card-body">
+                   <h5 class="card-title">
+                       {{ pag.nomVehicule }}
+                   </h5>
+                   <hr>
+                   <p class="card-text">
+                       {{ pag.description }}
+                   </p>
+                   <p class="card-text">
+                       {{ pag.prixHt }}
+                   </p>
+                   <p class="card-text">
+                       {{ pag.cv }}
+                   </p>
+                   <p class="card-text">
+                       {{ pag.datePMC|date("d-m-Y") }}
+                   </p>
+               </div>
 
-        {% endfor %}
-            <div class="pagination">
-                {{ knp_pagination_render(pagination) }}
-            </div>
-
+           {% endfor %}
+               <div class="pagination">
+                   {{ knp_pagination_render(pagination) }}
+               </div>
+         </div>
 </pre>
 
 ###  Vehiculerepository
