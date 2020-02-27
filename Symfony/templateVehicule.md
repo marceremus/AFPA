@@ -25,7 +25,7 @@
 </pre>
 
 ### Template (vehicule.index.html.twig)
-<pre>
+   <pre>
         <div class="card mb-4">
            {%  for pag in pagination %}
                <div class="card-body">
@@ -52,7 +52,7 @@
                    {{ knp_pagination_render(pagination) }}
                </div>
          </div>
-</pre>
+   </pre>
 
 ###  Vehiculerepository
 
