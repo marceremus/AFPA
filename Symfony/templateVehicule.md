@@ -25,8 +25,8 @@
 </pre>
 
 ### Template (vehicule.index.html.twig)
-   <pre>
-   /*
+      <pre>
+  
         <div class="card mb-4">
            {%  for pag in pagination %}
                <div class="card-body">
@@ -54,7 +54,7 @@
                </div>
          </div>
          */
-   </pre>
+      </pre>
 
 ###  Vehiculerepository
 
