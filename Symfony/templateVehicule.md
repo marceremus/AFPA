@@ -1,6 +1,6 @@
 
 # template Vehicule
-
+<pre>
 <div class="card mb-4">
         {% if(property.filename) %}
             <img src="{{ vich_uploader_asset(property, 'imageFile') |imagine_filter('thumb') }}" style="width:100%; height: auto" class="card-img-top" alt="">
@@ -24,3 +24,4 @@
         </p>
     </div>
 </div>
+</pre>
