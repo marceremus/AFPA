@@ -6,6 +6,10 @@
 - installations : 
 	- version light : composer create-project symfony/skeleton my_project_name
 	- version full : composer create-project symfony/website-skeleton my_project_name
+	
+### Changement des droits des fichiers 
+- pour un fichier donné : sudo chmod a+rwx .env
+- pour le dossier : sudo chmod -R 777 tondossier  ou sudo chmod a+rwx tondossier .  expl : sudo chmod -R 777 ./FosBundleTest/
 
 ### Lancement du projet
 	cd my-project/
@@ -27,3 +31,7 @@ php bin/console doctrine:database:create
 
 ### Gestion de la DB
 - liens : https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/association-mapping.html#association-mapping
+
+
+### Auth
+- https://www.youtube.com/watch?v=_GjHWa9hQic

@@ -1,54 +1,58 @@
-<?php
 
-namespace App\Controller;
+            <pre>
+                <?php
+            >>>>>>> 96ff35883c3ccd9b1aa71822a971ececfc982fa5
 
-use App\Entity\User;
-use App\Form\RegistrationFormType;
-use App\Security\SecurityAuthenticator;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
+            namespace App\Controller;
 
-class RegistrationController extends AbstractController
-{
-    /**
-     * @Route("/admin/register", name="app_register")
-     */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, SecurityAuthenticator $authenticator): Response
-    {
-        $user = new User();
-        $form = $this->createForm(RegistrationFormType::class, $user);
-        $form->handleRequest($request);
+            use App\Entity\User;
+            use App\Form\RegistrationFormType;
+            use App\Security\SecurityAuthenticator;
+            use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+            use Symfony\Component\HttpFoundation\Request;
+            use Symfony\Component\HttpFoundation\Response;
+            use Symfony\Component\Routing\Annotation\Route;
+            use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+            use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            // encode the plain password
-            $user->setPassword(
-                $passwordEncoder->encodePassword(
-                    $user,
-                    $form->get('plainPassword')->getData()
-                )
-            );
+            class RegistrationController extends AbstractController
+            {
+                /**
+                 * @Route("/admin/register", name="app_register")
+                 */
+                public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, SecurityAuthenticator $authenticator): Response
+                {
+                    $user = new User();
+                    $form = $this->createForm(RegistrationFormType::class, $user);
+                    $form->handleRequest($request);
 
-            $user->setRoles(["ROLE_ADMIN"]);
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($user);
-            $entityManager->flush();
+                    if ($form->isSubmitted() && $form->isValid()) {
+                        // encode the plain password
+                        $user->setPassword(
+                            $passwordEncoder->encodePassword(
+                                $user,
+                                $form->get('plainPassword')->getData()
+                            )
+                        );
 
-            // do anything else you need here, like send an email
+                        $user->setRoles(["ROLE_ADMIN"]);
+                        $entityManager = $this->getDoctrine()->getManager();
+                        $entityManager->persist($user);
+                        $entityManager->flush();
 
-            return $guardHandler->authenticateUserAndHandleSuccess(
-                $user,
-                $request,
-                $authenticator,
-                'main' // firewall name in security.yaml
-            );
-        }
+                        // do anything else you need here, like send an email
 
-        return $this->render('admin/registration/register.html.twig', [
-            'registrationForm' => $form->createView(),
-        ]);
-    }
-}
+                        return $guardHandler->authenticateUserAndHandleSuccess(
+                            $user,
+                            $request,
+                            $authenticator,
+                            'main' // firewall name in security.yaml
+                        );
+                    }
+
+                    return $this->render('admin/registration/register.html.twig', [
+                        'registrationForm' => $form->createView(),
+                    ]);
+                }
+            }
+

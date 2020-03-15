@@ -21,16 +21,7 @@ Cours php
 - Fonctions internes : https://www.php.net/manual/fr/functions.internal.php
 - Fonctions anonymes : https://www.php.net/manual/fr/functions.anonymous.php
 
+### Légende et mythe 
+ - Pourquoi met on un @ devant un appel de fonction ?
+  => Cela empeche un eventuel message d'erreur retourné par la fonction de s'afficher.... Il est plutôt deconseillé, sauf dans certains cas bien precis...
 
-    // $req = $db->prepare("SELECT * FROM signit WHERE email = :email OR password1 = :password1");
-    $req = $db->prepare("SELECT email, password1 FROM signit WHERE email = :email AND password1 = :password1");
-    // changement des paramétres et controle des champs
-    $req->bindParam(":email", $email, PDO::PARAM_STR);
-    $req->bindParam(":password1", $pass);
-    // execution de la requette
-
-    $req->execute() ;
-
-    while($data = $req->fetchObject()){
-        //var_dump($data);
-         echo '<p>'.$data->email.'  '.$data->password1.'  </p>';
