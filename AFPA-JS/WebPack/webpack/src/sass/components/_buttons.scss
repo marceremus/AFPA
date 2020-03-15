@@ -1,0 +1,15 @@
+$button__text-color: #80E0FF;
+$button__background-color: #1880FF;
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button__background-color;
+
+    cursor: pointer;
+
+    font-family: $base__font-family;
+    font-size: 16px;
+    color: $button__text-color;
+}

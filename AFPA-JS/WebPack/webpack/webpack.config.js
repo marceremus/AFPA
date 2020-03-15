@@ -11,20 +11,16 @@ module.exports = function (env) {
     return {
         // entry:"./src/js/app.js",
         entry: {
-            app: "./src/js/app.js",
-            vendors
-                :
-                ["jquery"]
+            vendors: ["jquery"],
+            app: "./src/js/app.js"
         }
         ,
         output: {
             publicPath: dev ? "/dist/" : "",
-            path
-                :
+            path:
                 resolve(__dirname, "dist"),
             // filename: "bundle.js"
-            filename
-                :
+            filename:
                 "[name].js"
         }
         ,
@@ -36,8 +32,8 @@ module.exports = function (env) {
                     }
                 }
             }
-        }
-        ,
+        },
+        devtool: prod ? "source-map" : "cheap-module-eval-source-map",
         module: {
             rules: [
                 {
@@ -46,7 +42,8 @@ module.exports = function (env) {
                     use: {
                         loader: "babel-loader",
                         options: {
-                            presets: ["@babel/preset-env"]
+                            presets: ["@babel/preset-env"],
+                            //plugins: ["@babel/syntax-dynamic-import"]
                         }
                     }
                 },
@@ -93,9 +90,13 @@ module.exports = function (env) {
             new HtmlWebpackPlugin({
                 template: "./src/index.html"
             }),
-            // new webpack.optimize.CommonsChunkPlugin({
-            //     name: "vendors"
-            // })
+            new webpack.optimize.CommonsChunkPlugin({
+                name: "vendors"
+            }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            })
         ]
     }
 };

@@ -1,0 +1,29 @@
+$base__font-family: Helvetica, Arial, sans-serif;
+
+body {
+    font-family: $base__font-family;
+}
+
+.page {
+
+    &-title {
+        margin-bottom: 10px;
+
+        font-size: 24px;
+    }
+
+    &-info {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+
+        span {
+            display: inline-block;
+            padding: 3px 7px;
+            border-radius: 5px;
+            background-color: #D6DADA;
+
+            color: #545557;
+        }
+    }
+}

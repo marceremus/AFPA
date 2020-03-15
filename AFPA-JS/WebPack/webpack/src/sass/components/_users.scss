@@ -1,0 +1,40 @@
+.users {
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #ededed;
+
+    list-style: none;
+
+    &__empty {
+        margin-top: 20px;
+    }
+}
+
+    .user {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__name {
+            display: inline-block;
+
+            font-weight: bold;
+        }
+
+        &__email {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        &__website {
+
+            a {
+                text-decoration: none;
+                color: #b769e5;
+            }
+        }
+    }

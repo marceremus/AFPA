@@ -1,0 +1,1 @@
+const del = require("del");

@@ -1,0 +1,13 @@
+{{#if users.length}}
+<ul class="users">
+{{#each users}}
+    <li class="user">
+        <span class="user__name">{{name}}</span>
+        <span class="user__email">{{email}}</span>
+        <span class="user__website"><a href="http://{{website}}">{{website}}</a></span>
+    </li>
+{{/each}}
+</ul>
+{{else}}
+<p class="users__empty">Nic nie znaleziono.</p>
+{{/if}}

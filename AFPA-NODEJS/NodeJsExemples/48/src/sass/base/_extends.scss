@@ -1,0 +1,15 @@
+// ---------------------
+//     EXTENDS
+// ---------------------
+
+%clearfix {
+    @include clearfix;
+}
+
+%transitionColor {
+    @include transition($props: color);
+}
+
+%transitionAll {
+    @include transition;
+}

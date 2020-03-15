@@ -1,0 +1,32 @@
+// -------------------------------
+//     BUTTONS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $button__font-size: 16px;
+
+    // *--------- COLORS ---------*
+    $button__text-color: #fff;
+    $button__background-color: #FF0061;
+
+// -------------------------------
+//     BUTTONS STYLES
+// -------------------------------
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    background-color: $button__background-color;
+
+    cursor: pointer;
+
+    font-size: $button__font-size;
+    color: $button__text-color;
+
+    @extend %transitionAll;
+
+    &:hover {
+        background-color: rgba($button__background-color, 0.7);
+    }
+}
