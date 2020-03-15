@@ -65,6 +65,8 @@ https://github.com/google/material-design-icons
 
 https://nuxt7.netlify.com/icons/
 
+### Templates 
+Ionic : https://ionicframework.com/docs
  - ------------ ------------ ------------ ------------ ------------ -----------
 
 # Les plugins
