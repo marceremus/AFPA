@@ -70,6 +70,19 @@ Ionic : https://ionicframework.com/docs
 
 ### Ionic 
 https://ionicframework.com/docs/v3/intro/installation/
+
+
+### Télécharger le code de la page : 
+https://github.com/ionic-team/ionic-docs/blob/master/src/demos/api/nav/index.html
+
+mettez le dans votre index.html
+
+Désormais vous pouvez utiliser les templates de ionic
+
+### Ionic - template
+https://ionicframework.com/docs/api/nav
+
+
  - ------------ ------------ ------------ ------------ ------------ -----------
 
 # Les plugins
