@@ -471,7 +471,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (36, 'comment_max_links', '2', 'yes'),
 (37, 'gmt_offset', '', 'yes'),
 (38, 'default_email_category', '1', 'yes'),
-(39, 'recently_edited', 'a:5:{i:0;s:81:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/comments.php\";i:1;s:76:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/404.php\";i:2;s:81:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/package.json\";i:3;s:85:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/style-editor.css\";i:4;s:96:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/style-editor-customizer.css\";}', 'no'),
+(39, 'recently_edited', 'a:5:{i:0;s:81:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/comments.php\";i:1;s:76:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/404.php\";i:2;s:81:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/package-exemple.json\";i:3;s:85:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/style-editor.css\";i:4;s:96:\"/Applications/MAMP/htdocs/wordpress/wp-content/themes/twentynineteen/style-editor-customizer.css\";}', 'no'),
 (40, 'template', 'afpa', 'yes'),
 (41, 'stylesheet', 'afpa', 'yes'),
 (42, 'comment_whitelist', '1', 'yes'),
