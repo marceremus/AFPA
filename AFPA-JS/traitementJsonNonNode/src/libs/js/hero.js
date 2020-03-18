@@ -1,6 +1,9 @@
 // la ligne suivante est valable si nous utilisons node js
 //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
+let alertMessage = document.querySelector('.alert-danger');
+alertMessage.hidden = true;
+
 // je place l'adresse dans une variable
 const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
 
@@ -8,13 +11,13 @@ const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/sup
 let xmlhttp = new XMLHttpRequest();
 
 // sur l'objet xmlhttp, j'effectue les operations et uniquement lorsque la connexion est prete
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onreadystatechange = function () {
     // je vérifie si sur ma connexion le statut est égale à 200 et si la réponse est prete 4
     if (this.readyState === 4 && this.status === 200) {
 
         // je m'assure que la réponse est de type json puis je la place dans la variable data
         let data = JSON.parse(this.responseText);
-        console.log(data);
+        //console.log(data);
 
         // je recherche la balise hero dans ma page
         let hero = document.querySelector('#hero');
@@ -53,7 +56,7 @@ xmlhttp.onreadystatechange = function() {
         let tabMemebre = data.members;
 
         // je parcure un tableau
-        for(let i = 0; i < tabMemebre.length; i++){
+        for (let i = 0; i < tabMemebre.length; i++) {
 
             // je crée un élément li
             let li = document.createElement('li');
@@ -70,9 +73,13 @@ xmlhttp.onreadystatechange = function() {
 
     }
 };
-
+alertMessage.hidden = true;
+if(typeof(requestURL) === "undefined"){
+    alertMessage.hidden = false;
+}
 // j'ouvre la connexion
 xmlhttp.open("GET", requestURL, true);
-
 // j'envoie la réponse
 xmlhttp.send();
+
+
