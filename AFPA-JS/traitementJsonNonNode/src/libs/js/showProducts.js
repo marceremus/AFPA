@@ -35,7 +35,7 @@ if(typeof(data) !== "undefined") {
         contenue += "<td>" + produit.name;
         contenue += "<td>" + produit.price;
         contenue += "<td>" + produit.cathegory;
-        contenue += "<td>" + addBtnAction("button", "btn-success", "Ajouter", produit.id, null, "./addProduct.html") + " " + addBtn("button", "btn-warning", "Modifier") + " " + addBtn("button", "btn-danger", "Supprimer");
+        contenue += "<td><a href='./addProduct.html' >" + addBtn("button", "btn-success", "Ajouter") + "</a>  <a href='./modifierProduit.html' >" + addBtn("button", "btn-warning", "Modifier") + "</a>  <a href='./deleteProduit.html' >" + addBtn("button", "btn-danger", "Supprimer") + "</a>";
         contenue += "</tr>";
     });
     balProduit.innerHTML = contenue;
