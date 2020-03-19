@@ -7,7 +7,7 @@ class Category {
     addCategory(nomCat) {
         return {name: nomCat};
     }
-    
+
     showAllCat(){
         let t = this.tab;
         for(let i = 0; i < t.length; i++){
