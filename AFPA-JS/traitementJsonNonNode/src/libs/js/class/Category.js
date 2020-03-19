@@ -9,9 +9,9 @@ class Category {
     }
 
     showAllCat(){
-        let t = this.tab;
-        for(let i = 0; i < t.length; i++){
-           t[i].name;
+        let t = new Array();
+        for(let i = 0; i < this.tab.length; i++){
+            t.push(this.tab[i].name);
         }
         return t;
     }
