@@ -1,5 +1,5 @@
 class Category {
-    tab = new Array();
+    tab = [];
     constructor(nomCat) {
         this.nomCat = nomCat;
     }
@@ -9,7 +9,7 @@ class Category {
     }
 
     showAllCat(){
-        let t = new Array();
+        let t = [];
         for(let i = 0; i < this.tab.length; i++){
             t.push(this.tab[i].name);
         }
@@ -18,7 +18,9 @@ class Category {
 
     supCat(item){
         for( let i = this.tab.length; i--;){
-            if ( this.tab[i].name === item) this.tab.splice(i, 1);
+            if ( this.tab[i].name === item){
+                this.tab.splice(i, 1);
+            }
         }
         return this.tab;
     }
