@@ -13,6 +13,13 @@ Sources :
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . index.php [NC,L] 
 
+
+### Créer un htaccess pour les projets Symfony
+	RewriteEngine on
+    RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+    RewriteRule ^ %1 [L,NE,R=302]
+    RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
 Les commandes pour créer votre fichier composer : conmposer init. 
 Cette commande permets de créer les fichier composer.json.
 
