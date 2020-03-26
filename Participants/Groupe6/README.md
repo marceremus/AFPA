@@ -1,4 +1,4 @@
-# AFPA-Participants Groupe 4
+# AFPA-Participants Groupe 6
 La liste des participants à la formation
 
 
