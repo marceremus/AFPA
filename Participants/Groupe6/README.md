@@ -15,4 +15,4 @@ Veuillez coller ici vos liens vers votre gitHub
  - Willebrouck 		Rémi 
  - Hourquin 		Lucas 
  - Audrey 			Bucholz 
- - Romuald 			Detrait
+ - Romuald 			Detrait https://github.com/RomualdLewandoski
