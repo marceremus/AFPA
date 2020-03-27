@@ -14,5 +14,5 @@ Veuillez coller ici vos liens vers votre gitHub
  - Cédric 			Brasme 
  - Willebrouck 		Rémi            https://github.com/Willremi
  - Hourquin 		Lucas 
- - Audrey 			Bucholz 
+ - Audrey 			Bucholz             https://github.com/AudreyBclz
  - Romuald 			Detrait https://github.com/RomualdLewandoski
