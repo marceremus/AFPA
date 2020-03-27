@@ -12,7 +12,7 @@ Veuillez coller ici vos liens vers votre gitHub
  - Danglot 			Damien 
  - Lefebvre 		Guillaume 
  - Cédric 			Brasme 
- - Willebrouck 		Rémi 
+ - Willebrouck 		Rémi            https://github.com/Willremi
  - Hourquin 		Lucas 
  - Audrey 			Bucholz 
  - Romuald 			Detrait https://github.com/RomualdLewandoski
