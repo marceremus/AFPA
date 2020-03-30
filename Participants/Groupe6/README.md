@@ -9,8 +9,8 @@ Veuillez coller ici vos liens vers votre gitHub
  - Ehrlich 			Axel               https://github.com/axelehrlich59/Groupe-6
  - Tauveron 		Loïc               https://github.com/Vashthestupid
  - Molinaro 		Edwina
- - Danglot 			Damien 
- - Lefebvre 		Guillaume         https://github.com/gui-lef
+ - Danglot 			Damien             https://github.com/VonRequiem
+ - Lefebvre 		Guillaume 
  - Cédric 			Brasme 
  - Willebrouck 		Rémi            https://github.com/Willremi
  - Hourquin 		Lucas 
