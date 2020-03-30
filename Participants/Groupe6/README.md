@@ -14,5 +14,5 @@ Veuillez coller ici vos liens vers votre gitHub
  - Cédric 			Brasme 
  - Willebrouck 		Rémi            https://github.com/Willremi/Groupe6
  - Hourquin 		Lucas 
- - Audrey 			Bucholz             https://github.com/AudreyBclz
+ - Audrey 			Bucholz             https://github.com/AudreyBclz/Groupe6
  - Romuald 			Detrait https://github.com/RomualdLewandoski
