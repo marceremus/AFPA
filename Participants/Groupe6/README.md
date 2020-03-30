@@ -8,6 +8,8 @@ Veuillez coller ici vos liens vers votre gitHub
  - Nom 	         	Prénom 	            Link gitHub 
  - Ehrlich 			Axel               
  - Tauveron 		Loïc               https://github.com/Vashthestupid
+ - Ehrlich 			Axel               https://github.com/axelehrlich59/Groupe-6
+ - Tauveron 		Loïc               https://github.com/Vashthestupid/Groupe_6
  - Molinaro 		Edwina
  - Danglot 			Damien             https://github.com/VonRequiem
  - Lefebvre 		Guillaume           https://github.com/gui-lef
@@ -15,4 +17,4 @@ Veuillez coller ici vos liens vers votre gitHub
  - Willebrouck 		Rémi            https://github.com/Willremi/Groupe6
  - Hourquin 		Lucas 
  - Audrey 			Bucholz             https://github.com/AudreyBclz
- - Romuald 			Detrait https://github.com/RomualdLewandoski
+ - Romuald 			Detrait https://github.com/RomualdLewandoski/Groupe6/
