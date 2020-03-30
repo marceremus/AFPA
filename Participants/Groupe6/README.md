@@ -9,7 +9,7 @@ Veuillez coller ici vos liens vers votre gitHub
  - Tauveron 		Loïc               https://github.com/Vashthestupid
  - Ehrlich 			Axel                https://github.com/axelehrlich59/Groupe-6
  - Tauveron 		Loïc                https://github.com/Vashthestupid/Groupe_6
- - Molinaro 		Edwina
+ - Molinaro 		Edwina              https://github.com/Edwina-molinaro
  - Danglot 			Damien              https://github.com/VonRequiem
  - Lefebvre 		Guillaume           https://github.com/gui-lef
  - Brasme     Cédric
