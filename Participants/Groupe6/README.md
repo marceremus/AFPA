@@ -15,4 +15,4 @@ Veuillez coller ici vos liens vers votre gitHub
  - Willebrouck 		Rémi            https://github.com/Willremi/Groupe6
  - Hourquin 		Lucas 
  - Audrey 			Bucholz             https://github.com/AudreyBclz
- - Romuald 			Detrait https://github.com/RomualdLewandoski
+ - Romuald 			Detrait https://github.com/RomualdLewandoski/Groupe6/
