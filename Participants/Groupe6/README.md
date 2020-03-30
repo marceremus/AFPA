@@ -10,7 +10,7 @@ Veuillez coller ici vos liens vers votre gitHub
  - Tauveron 		Loïc               https://github.com/Vashthestupid
  - Molinaro 		Edwina
  - Danglot 			Damien 
- - Lefebvre 		Guillaume 
+ - Lefebvre 		Guillaume         https://github.com/gui-lef
  - Cédric 			Brasme 
  - Willebrouck 		Rémi            https://github.com/Willremi
  - Hourquin 		Lucas 
