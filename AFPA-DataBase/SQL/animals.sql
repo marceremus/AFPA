@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Sep 03, 2019 at 10:56 AM
+-- Generation Time: Apr 02, 2020 at 10:22 AM
 -- Server version: 5.7.26
--- PHP Version: 7.3.7
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -13,6 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `animals`
 --
+CREATE DATABASE IF NOT EXISTS `animals` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `animals`;
 
 -- --------------------------------------------------------
 
@@ -20,6 +22,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `adresse`
 --
 
+DROP TABLE IF EXISTS `adresse`;
 CREATE TABLE `adresse` (
   `idadresse` int(11) NOT NULL,
   `adresse` varchar(250) DEFAULT NULL,
@@ -41,6 +44,7 @@ INSERT INTO `adresse` (`idadresse`, `adresse`, `code_postal`, `ville`) VALUES
 -- Table structure for table `animals`
 --
 
+DROP TABLE IF EXISTS `animals`;
 CREATE TABLE `animals` (
   `idAnimals` int(11) NOT NULL,
   `nom_animal` varchar(45) DEFAULT NULL,
@@ -63,6 +67,7 @@ INSERT INTO `animals` (`idAnimals`, `nom_animal`, `date_naissance`, `Proprios_id
 -- Table structure for table `proprios`
 --
 
+DROP TABLE IF EXISTS `proprios`;
 CREATE TABLE `proprios` (
   `idProprios` int(11) NOT NULL,
   `nom_proprio` varchar(45) DEFAULT NULL,
@@ -84,6 +89,7 @@ INSERT INTO `proprios` (`idProprios`, `nom_proprio`, `prenom_proprio`, `adresse_
 -- Table structure for table `race`
 --
 
+DROP TABLE IF EXISTS `race`;
 CREATE TABLE `race` (
   `idrace` int(11) NOT NULL,
   `nom_race` varchar(45) DEFAULT NULL
@@ -156,20 +162,3 @@ ALTER TABLE `proprios`
 --
 ALTER TABLE `race`
   MODIFY `idrace` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `animals`
---
-ALTER TABLE `animals`
-  ADD CONSTRAINT `fk_Animals_Proprios1` FOREIGN KEY (`Proprios_idProprios`) REFERENCES `Proprios` (`idProprios`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Animals_race1` FOREIGN KEY (`race_idrace`) REFERENCES `race` (`idrace`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Constraints for table `proprios`
---
-ALTER TABLE `proprios`
-  ADD CONSTRAINT `fk_Proprios_adresse1` FOREIGN KEY (`adresse_idadresse`) REFERENCES `adresse` (`idadresse`) ON DELETE NO ACTION ON UPDATE NO ACTION;

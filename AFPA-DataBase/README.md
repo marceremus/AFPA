@@ -23,6 +23,7 @@ Les cours sur les bases de données
 
 ### Exemple de base de données 
 - https://github.com/microsoft/sql-server-samples/tree/master/samples/databases
+- https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
 
 ## Les principales fonction SQL
 ### - Date et heure
