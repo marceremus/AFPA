@@ -11,7 +11,7 @@ Veuillez coller ici vos liens vers votre gitHub
  - Molinaro 		Edwina              https://github.com/Edwina-molinaro
  - Danglot 			Damien              https://github.com/VonRequiem
  - Lefebvre 		Guillaume           https://github.com/gui-lef
- - Brasme     Cédric
+ - Brasme           Cédric
  - Willebrouck 		Rémi            https://github.com/Willremi/Groupe6
  - Hourquin 		Lucas              https://github.com/Lhourquin
  - Audrey 			Bucholz             https://github.com/AudreyBclz/Groupe6
