@@ -1,8 +1,8 @@
 <?php
 
 // valiables
-$nom = 'EREMUS';
-$prenom = "MARC";
+$nom = 'Toto';
+$prenom = "Titi";
 $age = 23;
 $dixAns = 10;
 $ageDans10ans = 0;
@@ -54,7 +54,7 @@ $marqueVoiture = array("BMW", "Audi");
 
 // tableau associatif
 $tabVehicule = array(
-    "X1" =>  "BMW",       // js => 'nom' : 'EREMUS'
+    "X1" =>  "BMW",       // js => 'nom' : 'Toto'
     "X2" => "Mercedes"
 );
 
@@ -125,7 +125,7 @@ echo $age;
 echo $b;
 */
 
-// je m'appelle Marc EREMUS et j'ai 23 ans
+// je m'appelle Toto Titi et j'ai 23 ans
 //echo "<p>Je m'appelle ".$prenom." ".$nom." et j'ai ".$age." ans</p>";
 //echo "<p>Age dans 10 ans ".($age + $dixAns)."</p>";
 //echo "<p>Age dans 10 ans ".$ageDans10ans."</p>";
