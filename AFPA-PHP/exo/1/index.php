@@ -30,7 +30,7 @@ define('TVA55', 5.5);
 $tabVeh = array('BMW','Mercedes','Fiat','Renault','Peugeot');
 
 foreach ($tabVeh as $veh){
-    echo $veh.$b;
+    //echo $veh.$b;
 }
 
 $tableau = array("Marque" => "Iphone",
@@ -39,7 +39,7 @@ $tableau = array("Marque" => "Iphone",
 );
 
 foreach($tableau as $marque => $value){
-    echo $marque." => ".$value.$b;
+   // echo $marque." => ".$value.$b;
 }
 
 // Tableau
@@ -149,5 +149,6 @@ echo $b;
  * vous afficher dans le fichier et dans un tableau HTML les valeurs du tableau
  *
  */
+
 
 ?>
