@@ -5,8 +5,6 @@ require '../models/connect.php';
 
 $db = connection();
 
-var_dump($db);
-
 $vehiculeMarque = array(
     "Audi" => "A1",
     "Audi" => "A4",
@@ -19,6 +17,7 @@ $vehiculeMarque = array(
     "Ford" => "Fiesta",
     "PEUGEOT" => "S-Max",
 );
+
 
 head();
 ?>
@@ -37,7 +36,7 @@ head();
             <?php
             foreach ($vehiculeMarque as $marque=>$modele){
             ?>
-            <td><?= $marque ?></td>
+            <a href="detailProduit.php?marque" ><td><?= $marque ?></td></a>
             <td><?= $modele ?></td>
         </tr>
         <?php
