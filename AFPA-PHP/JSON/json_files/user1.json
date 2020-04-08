@@ -1,12 +1,34 @@
 [{
-  "name" : "Charles",
-  "first-name" : "My",
-  "last-name" : "Username",
-  "display-name" : "My Username",
-  "email" : "user@example.test",
+  "name" : "Dupont",
+  "first-name" : "Pierre",
+  "last-name" : "Dupont",
+  "display-name" : "Dupont",
+  "email" : "dupontpierre@google.com",
   "password" : {
-    "value" : "my_password"
+    "value" : "12345678"
   },
   "active" : true
-}
+},
+  {
+    "name" : "Delarue",
+    "first-name" : "Gerore",
+    "last-name" : "Delarue",
+    "display-name" : "Delarue",
+    "email" : "delaruegeorge@msn.com",
+    "password" : {
+      "value" : "delaruegeroge"
+    },
+    "active" : true
+  },
+  {
+    "name" : "Azna",
+    "first-name" : "Charles",
+    "last-name" : "Azna",
+    "display-name" : "Azna",
+    "email" : "aznacharge@eduweb.fr",
+    "password" : {
+      "value" : "pirate12345"
+    },
+    "active" : true
+  }
 ]
