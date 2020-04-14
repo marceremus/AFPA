@@ -8,22 +8,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema immodb
+-- Schema projetimmotrad
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `immodb` ;
+DROP SCHEMA IF EXISTS `projetimmotrad` ;
 
 -- -----------------------------------------------------
--- Schema immodb
+-- Schema projetimmotrad
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `immodb` DEFAULT CHARACTER SET utf8 ;
-USE `immodb` ;
+CREATE SCHEMA IF NOT EXISTS `projetimmotrad` DEFAULT CHARACTER SET utf8 ;
+USE `projetimmotrad` ;
 
 -- -----------------------------------------------------
--- Table `immodb`.`agence`
+-- Table `projetimmotrad`.`agence`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `immodb`.`agence` ;
+DROP TABLE IF EXISTS `projetimmotrad`.`agence` ;
 
-CREATE TABLE IF NOT EXISTS `immodb`.`agence` (
+CREATE TABLE IF NOT EXISTS `projetimmotrad`.`agence` (
   `idagence` INT NOT NULL AUTO_INCREMENT,
   `nomAgence` VARCHAR(145) NULL,
   `adresseAgence` VARCHAR(145) NULL,
@@ -36,11 +36,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `immodb`.`client`
+-- Table `projetimmotrad`.`client`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `immodb`.`client` ;
+DROP TABLE IF EXISTS `projetimmotrad`.`client` ;
 
-CREATE TABLE IF NOT EXISTS `immodb`.`client` (
+CREATE TABLE IF NOT EXISTS `projetimmotrad`.`client` (
   `idclient` INT NOT NULL AUTO_INCREMENT,
   `nomClient` VARCHAR(95) NULL,
   `prenomClient` VARCHAR(145) NULL,
@@ -54,11 +54,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `immodb`.`option`
+-- Table `projetimmotrad`.`option`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `immodb`.`option` ;
+DROP TABLE IF EXISTS `projetimmotrad`.`option` ;
 
-CREATE TABLE IF NOT EXISTS `immodb`.`option` (
+CREATE TABLE IF NOT EXISTS `projetimmotrad`.`option` (
   `idoption` INT NOT NULL AUTO_INCREMENT,
   `nomOption` VARCHAR(145) NULL,
   PRIMARY KEY (`idoption`),
@@ -67,11 +67,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `immodb`.`bien`
+-- Table `projetimmotrad`.`bien`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `immodb`.`bien` ;
+DROP TABLE IF EXISTS `projetimmotrad`.`bien` ;
 
-CREATE TABLE IF NOT EXISTS `immodb`.`bien` (
+CREATE TABLE IF NOT EXISTS `projetimmotrad`.`bien` (
   `idbien` INT NOT NULL AUTO_INCREMENT,
   `nomBien` VARCHAR(45) NULL,
   `prixBien` VARCHAR(45) NULL,
@@ -91,23 +91,23 @@ CREATE TABLE IF NOT EXISTS `immodb`.`bien` (
   INDEX `fk_bien_agence1_idx` (`agence_idagence` ASC),
   CONSTRAINT `fk_bien_option`
     FOREIGN KEY (`option_idoption`)
-    REFERENCES `immodb`.`option` (`idoption`)
+    REFERENCES `projetimmotrad`.`option` (`idoption`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_bien_agence1`
     FOREIGN KEY (`agence_idagence`)
-    REFERENCES `immodb`.`agence` (`idagence`)
+    REFERENCES `projetimmotrad`.`agence` (`idagence`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `immodb`.`achat`
+-- Table `projetimmotrad`.`achat`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `immodb`.`achat` ;
+DROP TABLE IF EXISTS `projetimmotrad`.`achat` ;
 
-CREATE TABLE IF NOT EXISTS `immodb`.`achat` (
+CREATE TABLE IF NOT EXISTS `projetimmotrad`.`achat` (
   `bien_idbien` INT NOT NULL,
   `client_idclient` INT NOT NULL,
   `dateAchat` DATETIME NULL,
@@ -117,12 +117,12 @@ CREATE TABLE IF NOT EXISTS `immodb`.`achat` (
   INDEX `fk_bien_has_client_bien1_idx` (`bien_idbien` ASC),
   CONSTRAINT `fk_bien_has_client_bien1`
     FOREIGN KEY (`bien_idbien`)
-    REFERENCES `immodb`.`bien` (`idbien`)
+    REFERENCES `projetimmotrad`.`bien` (`idbien`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_bien_has_client_client1`
     FOREIGN KEY (`client_idclient`)
-    REFERENCES `immodb`.`client` (`idclient`)
+    REFERENCES `projetimmotrad`.`client` (`idclient`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB

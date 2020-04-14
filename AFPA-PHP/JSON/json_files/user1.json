@@ -1,5 +1,5 @@
 [{
-  "name" : "Dupont",
+  "id" : 1,
   "first-name" : "Pierre",
   "last-name" : "Dupont",
   "display-name" : "Dupont",
@@ -10,7 +10,7 @@
   "active" : true
 },
   {
-    "name" : "Delarue",
+    "id" : 2,
     "first-name" : "Gerore",
     "last-name" : "Delarue",
     "display-name" : "Delarue",
@@ -18,10 +18,10 @@
     "password" : {
       "value" : "delaruegeroge"
     },
-    "active" : true
+    "active" : false
   },
   {
-    "name" : "Azna",
+    "id" : 3,
     "first-name" : "Charles",
     "last-name" : "Azna",
     "display-name" : "Azna",

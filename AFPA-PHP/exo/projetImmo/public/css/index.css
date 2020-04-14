@@ -1,0 +1,11 @@
+.location {
+    width: 25%;
+}
+.container{
+    min-height: 600px !important;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
