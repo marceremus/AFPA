@@ -32,11 +32,11 @@ if(isset($_POST['message'])){
 
 ini_set( 'display_errors', 1 );
 
-$from = "marceremus@gmail.com";
+$from = "*******@gmail.com";
 $to = $email;
 $subject = $sujet;
 $message = $messageform;
-$headers = "From: marceremus@gmail.com";
+$headers = "From: *******@gmail.com";
 
 mail($to,$subject,$message,$headers);
 
