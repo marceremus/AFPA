@@ -1,15 +1,17 @@
 <?php
 session_start();
-
+$_SESSION['marc'] = 'toto';
+var_dump($_SESSION['login']);
 if(isset($_SESSION['login'])){
     $email = $_SESSION['login'];
 
 }else{
     $_SESSION['login'] = $_POST['email'];
     $email = $_SESSION['login'];
-
 }
-
+var_dump($_SESSION['marc']);
+var_dump($_SESSION['login']);
+var_dump($email);
 ?>
 
 <!doctype html>
