@@ -1,9 +1,13 @@
 <?php
 session_start();
+
 if(isset($_SESSION['login'])){
     $email = $_SESSION['login'];
+
 }else{
-    $email = "";
+    $_SESSION['login'] = $_POST['email'];
+    $email = $_SESSION['login'];
+
 }
 
 ?>

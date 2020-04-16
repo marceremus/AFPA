@@ -1,6 +1,6 @@
 <?php
-session_start();
+
 if(isset($_COOKIE['login'])){
-    setcookie("login", "", time() - 3600);
+    setcookie("login", "", time() - 3600*24*365);
 }
 header('Location: index.php');
