@@ -7,7 +7,8 @@ if(isset($_POST['mot']))  {
 
 //$motrecherche="M@rc12345";
 
-$regex = "/^[A-Z]+@[a-z]/";
+//$regex = "/^[A-Z]+@[a-z]/";
+//$regex = "/^@\w/";
 
 ?>
 
