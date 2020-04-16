@@ -47,3 +47,7 @@ C'est là qu'entrent en jeu les accolades.
 
 {3,} : si vous mettez une virgule, mais pas de 2e nombre, ça veut dire qu'il peut y en avoir jusqu'à l'infini. Ici, cela signifie « 3 fois ou plus ».
 - '#a{3,}#fonctionne pour « aaa », « aaaa », « aaaaa », « aaaaaa », etc.
+
+
+## voir +
+- https://ihateregex.io/cheatsheet
