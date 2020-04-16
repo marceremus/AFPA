@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['marc'] = 'toto';
 
 if(isset($_SESSION['login'])){
     $email = $_SESSION['login'];
