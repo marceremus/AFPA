@@ -1,15 +1,44 @@
 <?php
 
 if(isset($_POST['mdp'])){
-    $mdp = htmlspecialchars(trim($_POST['mdp']));
+    $mdp = password_hash(htmlspecialchars(trim($_POST['mdp'])), PASSWORD_BCRYPT);
 }else{
     $mdp = '';
 }
+/*
+if(isset($_POST['email'])){
+    $email = htmlspecialchars(trim($_POST['mdp']));
+}else{
+    $email = '';
+}
 
+// Insert int user
+$sql = "INSERT INTO matable (mdp, email) VALUES ($mdp, $email)";
+$reqInsertUser = $db->prepare($sql);
+$reqInsertUser->execute();
+
+// SELECT
+
+$sqlSelectUser = "SELECT COUNT(email) FROM matable WHERE mdp = :mdp AND email = :email AND idUser = :ids";
+$reqSelectUser = $db->prepare($sql);
+$reqSelectUser->bindParam(':mdp', $mdp);
+$reqSelectUser->bindParam(':email', $email);
+$reqSelectUser->bindParam(':ids', $id);
+$reqSelectUser->execute();
+
+$retureMDP = $reqInsertUser->fetchObject();
+
+if($retureMDP ===1 ){
+    return 'OK';
+}else{
+    return 'Not ok';
+}
+*/
 
 // Source :  https://www.php.net/manual/fr/function.password-hash.php
 
-// cost - détermine le coût algorithmique qui doit être utilisé. Des exemples de ces valeurs peuvent être trouvés sur la page de la documentation de la fonction
+// cost - détermine le coût algorithmique qui doit être utilisé. Des exemples de
+// ces valeurs peuvent être trouvés sur la page de la documentation de la fonction
 // 12 par default
 
 $options = [
@@ -46,7 +75,8 @@ $options = [
         <p>MD5 => <?= MD5($mdp); ?></p>
         <p>SHA1 => <?= hash('SHA1', $mdp); ?></p>
         <p>SHA512 => <?= hash('SHA512', $mdp); ?></p>
-        <p>PASSWORD_BCRYPT => <?= password_hash($mdp, PASSWORD_BCRYPT, $options);; ?></p>
+        <p>PASSWORD_BCRYPT => <?= password_hash($mdp, PASSWORD_BCRYPT);; ?></p>
+
 
 
     </div>
