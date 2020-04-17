@@ -7,7 +7,7 @@ if(isset($_POST['mdp'])){
 }
 /*
 if(isset($_POST['email'])){
-    $email = htmlspecialchars(trim($_POST['mdp']));
+    $email = htmlspecialchars(trim($_POST['email']));
 }else{
     $email = '';
 }
@@ -63,6 +63,13 @@ $options = [
     </div>
     <div class="col">
         <form method="POST">
+
+           <!-- <div style="overflow: none; height: 0px;background: transparent; color: transparent; z-index: -1000000"data-description="dummyPanel for Chrome auto-fill issue">
+                <input type="text" style="height:0;background: transparent; color: transparent;border: none; display: none" data-description="dummyUsername"></input>
+                <input type="password" style="height:0;background: transparent; color: transparent;border: none; width: 0px" data-description="dummyPassword"></input>
+            </div>-->
+
+
             <div class="form-group">
                 <label for="mdp">Password</label>
                 <input type="password" name="mdp" class="form-control" id="mdp">
