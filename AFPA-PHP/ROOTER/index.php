@@ -30,10 +30,10 @@
 		require 'src/home.php';
 	}
 
-	dump( $router->getRoutes() );
-	dump( $match['target'] );
-	dump( $match['params'] );
-	dump( $match['name'] );
+	//dump( $router->getRoutes() );
+	//dump( $match['target'] );
+	//dump( $match['params'] );
+	//dump( $match['name'] );
 
 	require 'src/elements/footer.php';
 
