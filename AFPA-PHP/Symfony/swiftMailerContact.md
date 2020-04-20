@@ -9,7 +9,7 @@
     </pre>
 
 
-<pre>
+</pre>
 
 ## fichier .env
 - MAILER_URL=gmail://votremail@gmail.com:votreMotDePasse@localhost
