@@ -52,7 +52,7 @@ try {
 
     //Recipients
     $mail->setFrom($email, 'Formulaire de contact');
-    $mail->addAddress('marceremus@gmail.com', $nom.' '.$prenom);     // Add a recipient
+    $mail->addAddress('votreadresse@gmail.com', $nom.' '.$prenom);     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
