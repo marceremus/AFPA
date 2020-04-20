@@ -7,31 +7,31 @@ require 'vendor/autoload.php';
 
 
 if(isset($_POST['nom'])){
-    $nom = $_POST['nom'];
+    $nom = htmlspecialchars(trim($_POST['nom']));
 }else{
     $nom = "";
 }
 
 if(isset($_POST['prenom'])){
-    $prenom = $_POST['prenom'];
+    $prenom = htmlspecialchars(trim($_POST['prenom']));
 }else{
     $prenom = "";
 }
 
 if(isset($_POST['email'])){
-    $email = $_POST['email'];
+    $email = htmlspecialchars(trim($_POST['email']));
 }else{
     $email = "";
 }
 
 if(isset($_POST['sujet'])){
-    $sujet = $_POST['sujet'];
+    $sujet = htmlspecialchars(trim($_POST['sujet']));
 }else{
     $sujet = "";
 }
 
 if(isset($_POST['message'])){
-    $messageform = $_POST['message'];
+    $messageform = htmlspecialchars(trim($_POST['message']));
 }else{
     $messageform = "";
 }
@@ -39,6 +39,7 @@ if(isset($_POST['message'])){
 
 // Php mailer
 $mail = new PHPMailer(true);
+
 try {
     //Server settings
     $mail->isSMTP();                                            // Send using SMTP
@@ -59,6 +60,7 @@ try {
     $mail->Body    = $messageform;
 
     $mail->send();
+
     echo 'Le message a été bien envoyé';
 } catch (Exception $e) {
     echo "Le message n'a pas pu être envoyé. Le message d'erreur : {$mail->ErrorInfo}";
