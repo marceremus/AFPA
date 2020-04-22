@@ -1,6 +1,32 @@
 <?php
+
 ?>
 
+</div>
+<div class="jumbotron jumbotron-fluid bg-dark text-white bg-dark mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11 col-md-11 col-lg-3 col-xl-3 offset-1">
+                <h4 class="">Coordonnées de la société</h4>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at, consequatur corporis, dolorum eaque error fuga laboriosam magni maiores modi numquam odio praesentium quia quibusdam quidem rem ut vitae voluptates.
+                </p>
+            </div>
+            <div class="col-sm-11 col-md-11 col-lg-3 col-xl-3 offset-1">
+                <h4 class="">Coordonnées de la société</h4>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at, consequatur corporis, dolorum eaque error fuga laboriosam magni maiores modi numquam odio praesentium quia quibusdam quidem rem ut vitae voluptates.
+                </p>
+            </div>
+            <div class="col-sm-11 col-md-11 col-lg-3 col-xl-3 offset-1">
+                <h4 class="">Coordonnées de la société</h4>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at, consequatur corporis, dolorum eaque error fuga laboriosam magni maiores modi numquam odio praesentium quia quibusdam quidem rem ut vitae voluptates.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <!-- Optional JavaScript -->

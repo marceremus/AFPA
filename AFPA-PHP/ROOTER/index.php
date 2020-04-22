@@ -6,7 +6,8 @@
 	$router = new AltoRouter();
 	$router->setBasePath('/rooter');
 
-	$router->map('GET|POST','/home', 'home', 'home');
+	$router->map('GET','/', '/', 'base');
+	$router->map('GET','/home', 'home', 'home');
 	$router->map('GET|POST','/contact', "contact","contact");
 	$router->map('GET|POST','/showDetailsProduct', "showDetailsProduct","showDetailsProduct");
 	$router->map('GET|POST','/showDetailsProduct/[i:id]', "showDetailsProduct","showDetailsProductID");
@@ -28,7 +29,9 @@
 		require 'src/showDetailsProduct.php';
 	}elseif($match["target"] === "home"){
 		require 'src/home.php';
-	}
+	}else{
+	    require 'src/404.php';
+    }
 
 	//dump( $router->getRoutes() );
 	//dump( $match['target'] );
