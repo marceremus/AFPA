@@ -22,4 +22,3 @@ Lecture du contenue d'un fichier
 - file_get_contents('test.txt');
 
 
-
