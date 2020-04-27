@@ -20,6 +20,7 @@
 			echo '<p>Siret : '.$etab->siret.'</p>';
 			echo '<p>Nom : '.$etab->l1_normalisee.'</p>';
 			echo '<p>Adresse : '.$etab->l4_normalisee.'</p>';
+			echo '<p>Cp et ville  : '.$etab->l6_normalisee.'</p>';
 
 		}
 echo '<hr>';
