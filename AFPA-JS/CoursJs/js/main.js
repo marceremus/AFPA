@@ -441,7 +441,7 @@
 // console.log("Język przeglądarki: " + navigator.language);
 // console.log("Status onLine: " + navigator.onLine);
 
-// ---------------------------- Ajout elements    ----------------------------------
+// ---------------------------- Ajout partials    ----------------------------------
 
 // var list1 = document.querySelector("#list1"),
 //     list2 = document.querySelector("#list2");
@@ -457,7 +457,7 @@
 // // list2.removeChild(list2.querySelector(":last-child"));
 // //list1.replaceChild(li, list1.querySelector(":last-child"));
 
-// ----------------------------  Access aux elements  ----------------------------------
+// ----------------------------  Access aux partials  ----------------------------------
 
 //
 // var list = document.querySelector("#list");

@@ -183,7 +183,7 @@ class Data implements \ArrayAccess, \Countable, \IteratorAggregate
     }
 
     /**
-     * Limits the number of elements per depth level.
+     * Limits the number of partials per depth level.
      *
      * @param int $maxItemsPerDepth The max number of items dumped per depth level
      *

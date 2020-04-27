@@ -232,7 +232,7 @@
   function coerce(val) {
     // Getting an empty string will occur if the attribute is set on the HTML tag but without a value
     // We'll assume that this is an indication that it should be toggled to true
-    // For example <script data-search-pseudo-elements src="..."></script>
+    // For example <script data-search-pseudo-partials src="..."></script>
     if (val === '') return true;
     if (val === 'false') return false;
     if (val === 'true') return true;
@@ -240,7 +240,7 @@
   }
 
   if (DOCUMENT && typeof DOCUMENT.querySelector === 'function') {
-    var attrs = [['data-family-prefix', 'familyPrefix'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-elements', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-mutate-approach', 'mutateApproach'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
+    var attrs = [['data-family-prefix', 'familyPrefix'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-partials', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-mutate-approach', 'mutateApproach'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
     attrs.forEach(function (_ref) {
       var _ref2 = _slicedToArray(_ref, 2),
           attr = _ref2[0],

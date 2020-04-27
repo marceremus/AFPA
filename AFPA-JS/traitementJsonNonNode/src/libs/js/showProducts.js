@@ -70,7 +70,7 @@ if(typeof(data) !== "undefined") {
             for (i = 1; i < (rows.length - 1); i++) {
                 // Start by saying there should be no switching:
                 shouldSwitch = false;
-                /* Get the two elements you want to compare,
+                /* Get the two partials you want to compare,
                 one from current row and one from the next: */
                 x = rows[i].getElementsByTagName("TD")[c];
                 y = rows[i + 1].getElementsByTagName("TD")[c];
