@@ -11,7 +11,7 @@ $ php bin/console make:controller
 
 ### Maintenant dans notre controlleur
 
-	<pre>
+	
 		/* On oublie pas d'importer les composants */
 		use Symfony\Component\HttpFoundation\Request;
 		use Symfony\Component\HttpFoundation\Response;
@@ -56,14 +56,14 @@ $ php bin/console make:controller
 		    return $response;
 		}
 
-	</pre>
+	
 
 
 - La vue dans notre vue, on va crée quelque chose de basique avec un select et un modal qu’on récupère dans la doc Bootstrap 4.  
 
 ## La partie HTML
 
-	<pre>
+	
 		<div class="form-group">
 			<select class="custom-select" id="selectType">
 				<option value="0">1</option>
@@ -84,12 +84,12 @@ $ php bin/console make:controller
 				</div>
 			</div>
 		</div>
-	</pre>
+	
 
 
 ## La partie Javascript
 
-	<pre>
+	
 		$('#selectType').on('change', function (e) {
 			var idSelect = $('this').val();
 			$.ajax({
@@ -106,4 +106,4 @@ $ php bin/console make:controller
 					}
 			})
 		});
-	</pre>
+	
