@@ -65,7 +65,7 @@
                     $message = (new \Swift_Message($sujet))
                         ->setFrom($addEmail)
                         ->setTo('marceremus@gmail.com')
-                        ->setBody($textBody, 'text/html');
+                        ->setBody($textBody, 'text/html', 'utf-8');
 
                     $mailer->send($message);
 
