@@ -3,7 +3,8 @@
 function connect(){
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=gestionProduit;charset=utf8', 'root', 'root');
+        //$db = new PDO('mysql:host=localhost;dbname=gestionProduit;charset=utf8', 'root', 'root');
+        $db = new PDO('mysql:host=localhost:8889;dbname=products;charset=utf8', 'root', 'root');
         return $db;
     }
     catch(Exception $e)
@@ -32,7 +33,7 @@ if($req->rowCount()>0){
         array_push($results, $data);
     }
 }
-//var_dump(json_encode($results));
-return json_encode(array('success' => true, 'data' => $results));
+
+echo json_encode($results);
 
 

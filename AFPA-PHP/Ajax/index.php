@@ -2,7 +2,8 @@
 function connect(){
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=gestionProduit;charset=utf8', 'root', 'root');
+        $db = new PDO('mysql:host=localhost:8889;dbname=products;charset=utf8', 'root', 'root');
+        //$db = new PDO('mysql:host=localhost;dbname=gestionProduit;charset=utf8', 'root', 'root');
         return $db;
     }
     catch(Exception $e)
@@ -66,7 +67,7 @@ if($req->rowCount()>0){
 <div class="container">
     <div class="mt-5 mb-5">
         <h1>Ajax est mon ami </h1>
-        <div class="row">
+        <div class="row mt-5">
             <?php
             foreach ($results as $produit){
 
@@ -85,9 +86,10 @@ if($req->rowCount()>0){
         </div>
         <div class="mt-5" id="showProduct">
             <div class="row">
-                <div class="col-12" id="blocShox">
-                    <h4>Détail de mon produit</h4>
-
+                <div class="col-12 mt-2" id="blocShox">
+                    <h4><b>Détail de mon produit</b></h4>
+                    <hr>
+                    <span id="detail"></span>
                 </div>
             </div>
         </div>
