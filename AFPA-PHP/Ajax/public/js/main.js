@@ -11,7 +11,6 @@ $(document).ready(function(){
 
         $.ajax({
             url: "src/views/showProduct.php",
-            //type: "POST",
             method: "POST",
             dataType: "json",
             data: {
