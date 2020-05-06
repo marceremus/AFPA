@@ -2,14 +2,14 @@
 
 ## Page index.php
 
-### Action sur les buttons:
-  - pour permettre à ajax d'aller chercher l'élément sur lequel je doit agir je crée un div dans lequel j'ajoute id de mon produit:
+### Action sur les buttons :
+  - pour permettre à Ajax d'aller chercher l'élément sur lequel je dois agir je crée un div dans lequel j'ajoute id de mon produit :
           `
                 <div class="col-3 voirPlus">
                         <button id="<?php echo $produit->produitId ; ?>" class="btn btn-success">Voir +</button>
                 </div>
           `      
-  - ensuite je prépare l'endroit ou je vais placer l'affichage de la réponse que ajax m'envoie
+  - ensuite je prépare l'endroit où je vais placer l'affichage de la réponse que Ajax m'envoie
        ` <div class="col-12" id="blocShox">
                     <h4>Détail de mon produit</h4>
           </div>`
@@ -22,23 +22,23 @@
    // je cache son contenu
              divShowProdu.hide();
    
-   // je recherche les buttons d'action; j'obtiens une liste de tous les buttons
+   // je recherche les buttons d’action ; j'obtiens une liste de tous les buttons
              let voirPlusBtn = $(".voirPlus button");
    
-   // pour chaque button
+   // pour chaque bouton
               voirPlusBtn.on('click', function() {  
     
     // je place id des buttons dans une variable id
-    // this correspond au button sur lequel on click 
+    // this correspond au bouton sur lequel on click 
         let id = this.id;
 
-    // j'appele la méthode ajax disponible en jQuery
+    // j'appelle la méthode Ajax disponible en jQuery
         $.ajax({
    
-    // je précise l'adresse url de mon fichier php qui traitera les informations réçues
+    // je précise l'adresse url de mon fichier php qui traitera les informations reçues
             url: "src/views/showProduct.php",
             
-    // je precise la méthode d'envoie de mon id, ici POST
+    // je précise la méthode d'envoi de mon id, ici POST
             method: "POST",
     
     // je précise sous quelle forme je souhaite recevoir mon retour. 
@@ -61,17 +61,16 @@
             divShowProdu.show();
                 
     // je vais maintenant chercher mon block (span) qui me permet 
-    // d'afficher les informations reçu de mon fichier php
+    // d'afficher les informations reçues de mon fichier php
             let blocShox = $("#blocShox #detail");
 
-    // Etant donnée que j'envoie un tableau (le fichier php m'envoie un tableau)
-    // je prends le première élément et je le stocke dans une variable json
+    // Étant donné que j'envoie un tableau (le fichier php m'envoie un tableau)
+    // je prends le premier élément et je le stocke dans une variable json
             let json = data[0];
 
     // je prépare mon affichage 
-    // j'inserts des données dans mon div qui sera affiché
-                     
-          let results='<div class="col-12"><p><b>Nom : </b>'+ json.name +'</p></div><div class="col-3"><p><b>Description : </b>'+   json.description +'</p></div><div class="col-3"><p><b>Prix : </b>'+ json.price +' euros</p></div>';
+    // j'inserts des données dans mon div qui sera affiché           
+          <!--let results='<div class="col-12"><p><b>Nom : </b>'+ json.name +'</p></div><div class="col-3"><p><b>Description : </b>'+   json.description +'</p></div><div class="col-3"><p><b>Prix : </b>'+ json.price +' euros</p></div>';-->
 
       // j'ajoute le div créé dans mon span 
       blocShox.html(results);
@@ -79,4 +78,48 @@
         })
     })
     </pre>
+
+    ### fichier php
+
+            <pre>
+                // je vérifier si je reçois bien mon id de mon ajax
+                  if(isset($_POST['id'])){
+                    // je protège ma variable contre les insertions js 
+                    // je supprime les espaces de deux cotés (avant et arrière de mon id)
+                    // je transforme ma variable du string vers un nombre (intval)
+                      $id = intval(htmlspecialchars(trim($_POST['id'])));
+                  }else{
+                      $id = "";
+                  }
+
+                  // je crée ma connexion à la base de données - j'utilise la fonction créée plus haut
+                  $db = connect();
+
+                  // je crée ma requête sql
+                  $sql = "SELECT * FROM products WHERE id = :ids";
+                  // je la prépare
+                  $req = $db->prepare($sql);
+                  // je remplace ma variable temporaire ":ids" par la valeur de la variable reçu de mon Ajax (id)
+                  $req->bindParam(':ids', $id);
+                  // j'exécute ma requête
+                  $req->execute();
+
+                  // je crée un tableau dans lequel je souhaite placer les reposes de ma requête sql
+                  $results = array();
+
+                  // je vérifie si ma requête sql m'envoie des reposes et le nombre de réponse est > 0
+                  if($req->rowCount()>0){
+
+                    // je place les réponses dans une variable $data
+                      while($data = $req->fetchObject()){
+                        // pour chaque élément trouvé, je le place dans mon tableau préalablement créé
+                          array_push($results, $data);
+                      }
+                  }
+
+                  // je crée le type de ma réponse ici json
+                  // car j'ai demandé dans mon Ajax (voir fichier main.js) de m'envoyer la réponse sous forme de json
+                  // puis j'affiche ma réponse
+                  echo json_encode($results);
+            </pre>
         
