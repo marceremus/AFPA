@@ -11,9 +11,11 @@
 		uniquement pour les fichiers de type sh
 	- sudo chmod +x *.sh 
 
-## Demarrer le server Tomcat : ./startup.sh
+## Demarrer le server Tomcat : 
+	./startup.sh
 
-## Arret du server Tomcat : ./shutdown.sh
+## Arret du server Tomcat : 
+	./shutdown.sh
 
 ## Lancement du serveur sur le navigateur : 
 	- http://localhost:8080
