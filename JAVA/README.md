@@ -11,9 +11,8 @@
 
  - GWT: technologie pour faire du javascript, destiné à tourner dans un browser et manipulant du DOM. Domaine totalement différent des applications desktop donc.
 
-
-
- ### Modifications des droits sur le fichier bash
- - sudo chmod -R u+rwx ./bashIos.sh
- ./bashIos.sh
+ - Modifications des droits 
+		- sudo chmod 7555
+		uniquement pour les fichiers de type sh
+		- sudo chmod +x *.sh 
  
