@@ -3,16 +3,18 @@
 ## Page index.php
 
 ### Action sur les buttons :
-  - pour permettre à Ajax d'aller chercher l'élément sur lequel je dois agir je crée un div dans lequel j'ajoute id de mon produit :
-          `
+  - pour permettre à Ajax d'aller chercher l'élément sur lequel je dois agir je crée un div dans lequel j'ajoute id de mon produit 
+       ```
                 <div class="col-3 voirPlus">
                         <button id="<?php echo $produit->produitId ; ?>" class="btn btn-success">Voir +</button>
                 </div>
-          `      
+       ```      
   - ensuite je prépare l'endroit où je vais placer l'affichage de la réponse que Ajax m'envoie
-       ` <div class="col-12" id="blocShox">
+       ``` 
+          <div class="col-12" id="blocShox">
                     <h4>Détail de mon produit</h4>
-          </div>`
+          </div>
+       ```
  
 ## page main.js
 <pre>
