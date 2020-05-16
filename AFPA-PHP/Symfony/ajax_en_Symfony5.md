@@ -3,7 +3,7 @@
 
 ### fichier js 
 
-     ```
+    
 
 	      $('#selectType').on('change', function (e) {
 		var idSelect = $('this').val();
@@ -22,12 +22,12 @@
 			})
 		});
 
-       ```
+      
 
 
 ### fichier VehiculeController
 
-       ```
+      
 
             /* On oublie pas d'importer les composants */
             use Symfony\Component\HttpFoundation\Request;
@@ -73,12 +73,12 @@
             return $response;
             }
 
-       ```
+      
 
 
 ### Fichier show/index.html.twig
 
-       ```
+       
 
                 <div class="form-group">
 	            <select class="custom-select" id="selectType">
@@ -100,4 +100,4 @@
 		            </div>
 	            </div>
                         </div>
-       ```
+       
