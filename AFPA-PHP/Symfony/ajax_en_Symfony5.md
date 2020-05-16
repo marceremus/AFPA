@@ -3,9 +3,9 @@
 
 ### fichier js 
 
-            <pre>
+     ```
 
-            $('#selectType').on('change', function (e) {
+      $('#selectType').on('change', function (e) {
 	var idSelect = $('this').val();
 	$.ajax({
 		url: '{{ path('ajax_action') }}',
@@ -19,10 +19,10 @@
 				$('#textAjax').text(data.info);
 				$('#myModal').modal('show');
 			}
-	                        })
-                        });
+	        })
+	});
 
-            </pre>
+       ```
 
 
 ### fichier VehiculeController
