@@ -3,31 +3,31 @@
 
 ### fichier js 
 
-            <pre>
+    
 
-            $('#selectType').on('change', function (e) {
-	var idSelect = $('this').val();
-	$.ajax({
-		url: '{{ path('ajax_action') }}',
-		type: "POST",
-		dataType: "json",
-			data: {
-				"idSelect": idSelect
-			},
-			async: true,
-			success: function (data) {
-				$('#textAjax').text(data.info);
-				$('#myModal').modal('show');
-			}
-	                        })
-                        });
+	      $('#selectType').on('change', function (e) {
+		var idSelect = $('this').val();
+		$.ajax({
+			url: '{{ path('ajax_action') }}',
+			type: "POST",
+			dataType: "json",
+				data: {
+					"idSelect": idSelect
+				},
+				async: true,
+				success: function (data) {
+					$('#textAjax').text(data.info);
+					$('#myModal').modal('show');
+				}
+			})
+		});
 
-            </pre>
+      
 
 
 ### fichier VehiculeController
 
-            <pre>
+      
 
             /* On oublie pas d'importer les composants */
             use Symfony\Component\HttpFoundation\Request;
@@ -47,22 +47,22 @@
             */
             public function ajaxAction(Request $request)
             {
-	/* on récupère la valeur envoyée */
-            $idSelect = $request->request->get('idSelect');
+		/* on récupère la valeur envoyée */
+		    $idSelect = $request->request->get('idSelect');
 
-	switch ($idSelect) {
-		case 0:
-			$info = 'Page 1';
-			break;
-		case 1:
-			$info = 'Page 2';
-			break;
-		case 2:
-			$info = 'Page 3';
-			break;
-		default:
-			$info = 'La page n'existe pas';
-            }
+		switch ($idSelect) {
+			case 0:
+				$info = 'Page 1';
+				break;
+			case 1:
+				$info = 'Page 2';
+				break;
+			case 2:
+				$info = 'Page 3';
+				break;
+			default:
+				$info = 'La page n'existe pas';
+		    }
 
 	            /* On renvoie une réponse encodée en JSON */
 	            $response = new Response(json_encode(array(
@@ -73,12 +73,12 @@
             return $response;
             }
 
-            </pre>
+      
 
 
 ### Fichier show/index.html.twig
 
-                <pre>
+       
 
                 <div class="form-group">
 	            <select class="custom-select" id="selectType">
@@ -100,4 +100,4 @@
 		            </div>
 	            </div>
                         </div>
-                </pre>
+       
