@@ -1,6 +1,7 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 
 // Load Composer's autoloader
 require 'vendor/autoload.php';
@@ -39,6 +40,7 @@ if(isset($_POST['message'])){
 
 // Php mailer
 $mail = new PHPMailer(true);
+
 
 try {
     //Server settings
