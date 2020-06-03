@@ -8,5 +8,5 @@ Veuillez coller ici vos liens vers votre gitHub
  - Nom 	         	Prénom 	            Link gitHub          
  - Bernon         Nicolas             https://github.com/Shinzoku/EstateManagement
  - Guevorte       Vincent             https://github.com/VincentGuevorte/tradegame
- - Krzyzostoniak  Olivier             https://github.com/okrzyzos
+ - Krzyzostoniak  Olivier             https://github.com/okrzyzos/spaanimaux
 
