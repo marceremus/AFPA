@@ -11,9 +11,12 @@ $text = Pdf::getText($facture, $path, ["-enc UTF-8"]);
 
 var_dump($text);
 
+str_replace('\n', '', $text);
 $substract = explode(" ", $text);
 
 var_dump($substract);
+var_dump($substract[5]);
+
 
 ?>
 <!DOCTYPE html>
