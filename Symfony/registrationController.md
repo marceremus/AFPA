@@ -1,7 +1,6 @@
 
-            <pre>
+```
                 <?php
-            >>>>>>> 96ff35883c3ccd9b1aa71822a971ececfc982fa5
 
             namespace App\Controller;
 
