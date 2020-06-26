@@ -3,6 +3,11 @@ Créer le projet:
 - lien : https://symfony.com/doc/current/setup.html
 composer create-project symfony/website-skeleton nomProjet
 
+- twig / bootstrap
+```
+-     form_themes:
+        - bootstrap_4_layout.html.twig
+```
 
 Security
 lien : https://symfony.com/doc/current/security.html

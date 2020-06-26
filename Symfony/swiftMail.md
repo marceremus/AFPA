@@ -9,7 +9,7 @@
 
         $message = (new Swift_Message($sujetMessage))
             ->setFrom([$email => $nom." ".$prenom])
-            ->setTo(['marceremus@gmail.com', 'marceremus@gmail.com' => 'A name'])
+            ->setTo(['votreemail@gmail.com', 'votreemail@gmail.com' => 'A name'])
             //->setBody(file_get_contents("../view/Emails/email.html"));
             ->setBody($messageBody);
 
