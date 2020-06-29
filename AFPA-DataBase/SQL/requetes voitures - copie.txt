@@ -1,0 +1,79 @@
+
+1/Ajouter un véhicule de type "tourisme":
+
+INSERT INTO Vehicles(IdMarks, IDModels, vehiclesName, vehiclesType, VehiclesFirstUse, vehiclesPw, vehiclesKm, vehiclesInStock, vehiclesDescription, vehiclesPrice, IdEnergyTypes, IdPictures, IdColors, IdWheelSizes, IdOptions) Values (1,2,"Alizée","Tourisme","2001-12-12",8,56000,1,"Ajout véhicule de tourisme",25000,1,2,1,1,1);
+
+Correction : 
+INSERT INTO Vehicles(IdMarks, IDModels, vehicleName, vehicleType, VehicleFirstUse, vehiclePw, vehicleKm, vehicleInStock, idZipCodes, vehicleDescription, vehiclePrice,vatAmount,IdEnergyTypes, IdPictures, IdColors, IdWheelSizes, IdOptions) Values (1,2,"Alizée","Tourisme","2001-12-12",8,56000,1,1,"Ajout véhicule de tourisme",25000,1,1,2,1,1,1);
+
+
+2/Ajouter un utilisateur :
+
+Insert INTO Users(userLastName, userFirstName, userMail, userPhone, IdUsersType, IdAdresses) values ("Nouvel", "Utilisateur", "new@utilisateur.fr", "0302010605", 1, 2);
+
+OK
+
+
+3/Afficher les véhicules dont le prix est compris entre 8 000 et 15 000 euros dans la ville de Lille avec l’ordre de prix croissant 
+
+SELECT * FROM vehicles WHERE idZipCodes IN (SELECT idZipCodes FROM zipcodes WHERE TownName = "Lille");         (--selectionne les voitures situées à Lille)
+Ok
+
+
+SELECT * FROM vehicles WHERE vehiclePrice BETWEEN 8000 AND 15000;       (--pour la selection de prix)
+OK
+
+Donc
+
+SELECT * FROM vehicles WHERE vehiclePrice BETWEEN 8000 AND 15000
+AND idZipCodes IN (SELECT idZipCodes FROM zipcodes WHERE TownName = "Lille")
+ORDER BY vehiclePrice ASC LIMIT 0,3;
+OK
+
+
+4/Afficher les véhicules de marque BMW âgés de moins de 5 ans et dont le modèle de X6 avec les options suivantes : climatisation, GPS, pneus 19 pouces:
+
+SELECT * FROM vehicles WHERE IdMarks IN (SELECT IdMarks from Marks Where MarkName = "BMW");                                  (--selectionne les bmw)
+SELECT * FROM `models` WHERE `modelName` = "x6";                                                                             (--selectionne le model)  
+SELECT * FROM vehicles WHERE IdWheelSizes in ( SELECT IdWheelSizes from wheelsizes WHERE WheelSizeLabel = 19);               (--selectionne les 19")
+SELECT * FROM vehicles WHERE idOptions in ( SELECT idOptions from options WHERE Gps = 1 AND airConditioner = 1);             (--selectionne l id gps + clim)
+NON
+
+
+Donc 
+
+
+SELECT * FROM vehicles WHERE IdMarks IN (SELECT IdMarks from Marks Where MarkName = "BMW")
+AND IdWheelSizes IN ( SELECT IdWheelSizes from wheelsizes WHERE WheelSizeLabel = 19)
+AND idOptions IN ( SELECT idOptions from options WHERE Gps = 1 AND airConditioner = 1)
+AND idModels IN (SELECT idModels FROM Models WHERE modelName = "x6");
+
+
+5/Afficher le prix des véhicules HT et TTC présent en stock, dont la puissance est supérieure à 6CV, de type électrique et hybride, de marque BMW, Toyota et Audi. Je voudrais également les regrouper par type.
+
+SELECT * from vehicles WHERE vehicleInStock = "1"  
+and vehiclePw > "6"
+and `idEnergyTypes`IN (SELECT `idEnergyTypes`FROM energyTypes WHERE energyName = "Electrique" OR energyName = "Hybride")
+AND `idMarks` IN (SELECT `idMarks`FROM marks WHERE markName ="BMW" or markName = "Audi" or markName = "Toyota")
+ORDER BY idEnergyTypes;
+
+			=>>>>je ne vois pas comment afficher le montant ttc
+
+6/Supprimer les véhicules âgés de plus de 20 ans dans la ville de Douai 
+
+DELETE FROM vehicles WHERE `vehicleFirstUse` = (SELECT MIN(2000-01-01))
+AND idZipCodes IN (SELECT idZipCodes from zipcodes WHERE townName = "Douai");
+
+
+
+7/Modifier les noms des véhicules afin de pouvoir les afficher en majuscule. 
+
+SELECT UCASE(vehicleName)AS vehicleNameInMaj  FROM vehicles;
+
+
+8/Modifier le nombre de km pour les véhicules ayant plus de 150 000 km (objectif est de remplacer ce kilométrage et afficher 99 000 km)   
+
+UPDATE  Vehicles SET `vehicleKm`= "99000" WHERE `vehicleKm` > "150000";
+
+			=>>>>><pas d erreur mais ne modifie rien.....pas trouvé mieux
+
