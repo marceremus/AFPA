@@ -44,5 +44,6 @@ lien : https://symfony.com/doc/current/security.html
 
 	php bin/console doctrine:migrations:migrate
 
-
+- embed templating des blocks
+	 => lien : https://twig.symfony.com/doc/3.x/tags/embed.html
 
