@@ -1,3 +1,5 @@
+
+````
 security:
     encoders:
         App\Entity\User:
@@ -49,3 +51,4 @@ security:
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/profile, roles: ROLE_USER }
+````
