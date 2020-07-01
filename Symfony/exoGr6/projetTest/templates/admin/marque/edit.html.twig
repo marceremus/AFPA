@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Marque{% endblock %}
+
+{% block body %}
+    <h1>Edit Marque</h1>
+
+    {{ include('admin/marque/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('marque_index') }}">
+        <button class="btn btn-outline-dark">Retour</button>
+    </a>
+
+    {{ include('admin/marque/_delete_form.html.twig') }}
+{% endblock %}

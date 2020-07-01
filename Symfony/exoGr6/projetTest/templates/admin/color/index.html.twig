@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Color index{% endblock %}
+
+{% block body %}
+    <h1>Color index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomColor</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for color in colors %}
+            <tr>
+                <td>{{ color.id }}</td>
+                <td>{{ color.nomColor }}</td>
+                <td>
+                    <a href="{{ path('color_show', {'id': color.id}) }}">
+                        <button type="button" class="btn btn-outline-dark">Voir</button>
+                    </a>
+                    <a href="{{ path('color_edit', {'id': color.id}) }}">
+                        <button type="button" class="btn btn-outline-dark">Edition</button>
+                    </a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('color_new') }}">
+        <button type="button" class="btn btn-outline-dark">Créer</button>
+    </a>
+{% endblock %}

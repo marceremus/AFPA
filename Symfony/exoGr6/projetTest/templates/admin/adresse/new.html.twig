@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Adresse{% endblock %}
+
+{% block body %}
+    <h1>Create new Adresse</h1>
+
+    {{ include('admin/adresse/_form.html.twig') }}
+
+    <a href="{{ path('adresse_index') }}">
+        <button type="button" class="btn btn-outline-dark">Retour</button>
+    </a>
+{% endblock %}

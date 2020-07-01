@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vehicule index{% endblock %}
+
+{% block body %}
+    <h1>Vehicule index</h1>
+    <div class="table-responsive-sm table-responsive-md">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomVehicule</th>
+                <th>NumImmat</th>
+                <th>PrixHt</th>
+                <th>NbPorte</th>
+                <th>Marque</th>
+                <th>Options</th>
+                <th>Type véhicule</th>
+                <th>Couleur</th>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <th>actions</th>
+                {% endif %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for vehicule in vehicules %}
+                <tr>
+                    <td>{{ vehicule.id }}</td>
+                    <td>{{ vehicule.nomVehicule }}</td>
+                    <td>{{ vehicule.numImmat }}</td>
+                    <td>{{ vehicule.prixHt }}</td>
+                    <td>{{ vehicule.nbPorte }}</td>
+
+                    {% if vehicule.marque %}
+                        <td>{{ vehicule.marque.nomMarque }}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+
+                    {% if vehicule.options %}
+                        <td>{{ vehicule.options.nomOption }}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+
+                    {% if vehicule.typeVehicule %}
+                        <td>{{ vehicule.typeVehicule.nomTypeVehicule }}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+
+                    {% if vehicule.color %}
+                        <td>{{ vehicule.color.nomColor }}</td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <td>
+                            <div class="row">
+
+                                <a href="{{ path('vehicule_show', {'id': vehicule.id}) }}">
+                                    <button class="btn btn-outline-dark">Voir</button>
+                                </a>
+
+                                <a href="{{ path('vehicule_edit', {'id': vehicule.id}) }}">
+                                    <button class="btn btn-outline-dark">Edition</button>
+                                </a>
+
+                            </div>
+                        </td>
+                    {% endif %}
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="6">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{{ path('vehicule_new') }}">
+            <button type="button" class="btn btn-outline-dark">Créer</button>
+        </a>
+    </div>
+{% endblock %}

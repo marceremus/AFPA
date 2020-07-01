@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Options{% endblock %}
+
+{% block body %}
+    <h1>Edit Options</h1>
+
+    {{ include('admin/options/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('options_index') }}">
+        <button class="btn btn-outline-dark">Retour</button>
+    </a>
+
+    {{ include('admin/options/_delete_form.html.twig') }}
+{% endblock %}

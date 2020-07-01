@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Vehicule{% endblock %}
+
+{% block body %}
+    <h1>Create new Vehicule</h1>
+
+    {{ include('admin/vehicule/_form.html.twig') }}
+
+    <a href="{{ path('vehicule_index') }}">
+        <button type="button" class="btn btn-outline-dark">Retour</button>
+    </a>
+{% endblock %}

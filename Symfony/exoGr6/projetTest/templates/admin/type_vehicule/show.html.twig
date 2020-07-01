@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TypeVehicule{% endblock %}
+
+{% block body %}
+    <h1>TypeVehicule</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ type_vehicule.id }}</td>
+            </tr>
+            <tr>
+                <th>NomTypeVehicule</th>
+                <td>{{ type_vehicule.nomTypeVehicule }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('type_vehicule_index') }}">
+        <button type="button" class="btn btn-outline-dark">Retour</button>
+    </a>
+
+    <a href="{{ path('type_vehicule_edit', {'id': type_vehicule.id}) }}">
+        <button type="button" class="btn btn-outline-dark">Edition</button>
+    </a>
+
+    {{ include('admin/type_vehicule/_delete_form.html.twig') }}
+{% endblock %}

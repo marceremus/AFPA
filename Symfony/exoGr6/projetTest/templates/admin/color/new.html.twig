@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Color{% endblock %}
+
+{% block body %}
+    <h1>Create new Color</h1>
+
+    {{ include('admin/color/_form.html.twig') }}
+
+    <a href="{{ path('color_index') }}">
+        <button type="button" class="btn btn-outline-dark">Retour</button>
+    </a>
+{% endblock %}
