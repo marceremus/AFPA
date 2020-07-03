@@ -382,9 +382,9 @@
 
 ### créer un fichier vich_uploader.yaml dans config/package
 
-				<pre>
+			
 
-					vich_uploader:
+				vich_uploader:
 				    db_driver: orm
 				    mappings:
 				        product_image:
@@ -393,7 +393,7 @@
 				            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
 
 
-				</pre>
+			
 
 
 ### Créer le fichier knp_paginator.yml dans dans config/package
