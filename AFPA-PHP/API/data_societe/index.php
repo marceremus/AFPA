@@ -21,16 +21,17 @@
 	<?php
 		require_once 'api_data_nom_societe.php';
 		require_once 'api_data_num_siret.php';
+if(isset($_GET['nomSociete']) && !empty($_GET['nomSociete'])){
+    $nomSociete = $_GET['nomSociete'];
+}else{
+    $nomSociete = "";
+}
 
-		if(isset($_GET['nomSociete'])){
-			$nomSociete = $_GET['nomSociete'];
-		}else{
-			$nomSociete = null;
-		}
-
-		if($nomSociete !== null){
+		if(!empty($nomSociete)){
 			showDataByCompanyName($nomSociete);
-		}
+		}else{
+            echo '<p>Le nom de la société doit être saisi</p>';
+        }
 	?>
     <br>
     <h2>API php - affichage des coordonées en fonction du numéro de SIRET</h2>
@@ -44,15 +45,17 @@
     </form>
     <br>
 	<?php
-		if(isset($_GET['numSiret'])){
+		if(isset($_GET['numSiret']) && !empty($_GET['numSiret'])){
 			$numSiret = $_GET['numSiret'];
 		}else{
 			$numSiret = null;
 		}
 		// '34926669200061'
-		if($numSiret !== null) {
+		if(!empty($numSiret)) {
 			showDataByCompanySitet( $numSiret );
-		}
+		}else{
+		    echo '<p>Le nom de la société doit être saisi</p>';
+        }
 	?>
 </div>
 <!-- JS -->
