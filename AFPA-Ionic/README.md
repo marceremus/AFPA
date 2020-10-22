@@ -1,2 +1,0 @@
-# AFPA-Ionic
-Cours Ionic

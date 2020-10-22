@@ -1,3 +1,11 @@
+let div = document.createElement('div'),
+body = document.querySelector('body'),
+text = document.createElement('p');
+
+div.appendChild(text);
+body.append(div);
+
+
 // -------------------------  WHILE  -------------------------------------
 
 //var number = 10;
@@ -28,6 +36,43 @@
 // for (var i = 1; i <= 5; i++) {
 //     console.log(i);
 // }
+
+var tableau = ['Axel','Math', 'Pierre'];
+
+for( prenom of tableau){
+	//console.log(prenom);
+}
+
+
+for(prenom in tableau){
+	//console.log(prenom);
+}
+
+
+var tableauObj = [
+	{
+     firstName: "Pierre",
+     lastName: "Dupont",
+     age: 32
+	},
+	{
+     firstName: "Michel",
+     lastName: "Durant",
+     age: 32
+	}
+];
+
+console.log(tableauObj);
+
+for(prenom in tableauObj){
+	/*let content = `${firstName} ${lastName}`;
+	let p = document.querySelector('div p');
+	p.innerText = content;*/
+	//document.append(content);
+	console.log(tableauObj[prenom].firstName);
+	console.log(tableauObj[prenom].lastName);
+	//console.log(`${prenom.firstName} ${prenom.lastName}`);
+}
 
 // ----------------------------  FOR IN - OBJ  ----------------------------
 
