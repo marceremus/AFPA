@@ -35,7 +35,7 @@
 
 ### fichier VehiculeController
 
-    ```
+```
         /**
          * @Route("/vehicule/{id}/heart", name="vehicule_show_heart", methods={"GET","POST"})
         */
@@ -59,17 +59,16 @@
                 ], 200);
             }
 
-
-    ```
+```
 
 
 ### Fichier show/index.html.twig
 
-    ```
+```
     <div id="like" class="m-5">
         <a href="{{ path('vehicule_show_heart', { 'id': vehicule.id}) }}" class="ajax fa fa-thumbs-o-down">
         <span class="like">Actuellement, il y a {{ vehicule.liked }} likes sur ce produit</span>
         </a>
     </div>
 
-    ``
+```
