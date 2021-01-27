@@ -2,11 +2,11 @@
 
 ## fichier swiftmailer.yaml
 - pour localhost: 
-    ```
+```
     swiftmailer:
         url: '%env(MAILER_URL)%'
         spool: { type: 'memory' }
-    ```
+```
 
 
 ## fichier .env
@@ -15,7 +15,7 @@
 
 ## fichier : ContactController.php
     
-    ```
+```
 
         <?php
 
@@ -87,6 +87,6 @@
             }
         }
     
-    ```
+```
 
     
