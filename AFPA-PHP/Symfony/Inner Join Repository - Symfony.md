@@ -1,6 +1,7 @@
 # Inner Join Repository - Symfony
 
-<pre>
+```
+
 
 $query = $this->createQueryBuilder('c')
         ->select('c')
@@ -11,4 +12,6 @@ $query = $this->createQueryBuilder('c')
         ->setParameter('group', $group)
         ->setMaxResults(20);
 
-</pre>
+
+```
+

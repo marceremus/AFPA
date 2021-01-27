@@ -2,21 +2,21 @@
 
 ## fichier swiftmailer.yaml
 - pour localhost: 
-    <pre>
+    ```
     swiftmailer:
         url: '%env(MAILER_URL)%'
         spool: { type: 'memory' }
-    </pre>
+    ```
 
-
-</pre>
 
 ## fichier .env
 - MAILER_URL=gmail://votremail@gmail.com:votreMotDePasse@localhost
 
 
 ## fichier : ContactController.php
-    <pre>
+    
+    ```
+
         <?php
 
         namespace App\Controller;
@@ -86,4 +86,7 @@
                 ]);
             }
         }
-    </pre>
+    
+    ```
+
+    

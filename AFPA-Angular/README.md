@@ -1,2 +1,0 @@
-# AFPA-Angular
-Cours Angular
