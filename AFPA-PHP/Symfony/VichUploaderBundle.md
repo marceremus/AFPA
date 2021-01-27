@@ -3,7 +3,7 @@
 
 ### Dans le fichier  Entity/Vehicule - fichier à modifier
 	
-	```
+```
 
 	<?php
 
@@ -274,12 +274,12 @@
 	}
 
 
-	```
+```
 
 
 ### VehiculeType - formulaire 
 
-	```
+```
 
 	class VehiculeType extends AbstractType
 	{
